@@ -9,6 +9,7 @@ const Calculator = () => {
 
   return (
     <div className="main">
+      <p>gokul</p>
       <div className="outputbox">
         <input
           type={"text"}
