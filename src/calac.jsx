@@ -6,13 +6,17 @@ const Calculator = () => {
   const add = (num) => {
     setDisplay(`${display}${num}`);
   };
+  const Ac = () => {
+    setDisplay("")
+  }
 
   return (
     <div className="main">
-      <p>gokul</p>
+      <p>Calculator</p>
       <div className="outputbox">
         <input
           type={"text"}
+          placeholder="Enter the value"
           value={`${display}`}
           onChange={(e) => e.target.value}
         ></input>
@@ -21,7 +25,7 @@ const Calculator = () => {
         <button onClick={() => add(7)}> 7 </button>
         <button onClick={() => add(8)}> 8 </button>
         <button onClick={() => add(9)}> 9 </button>
-        <button>AC</button>
+        <button onClick={Ac} >AC</button>
       </div>
       <div className="row">
         <button onClick={() => add(4)}> 4 </button>
